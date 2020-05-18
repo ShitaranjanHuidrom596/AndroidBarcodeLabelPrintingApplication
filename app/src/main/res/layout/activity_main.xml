@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickConnect"
+            android:text="Connect Usb Printer" />
+
+        <Button
+            android:id="@+id/wifibtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="wifibtn"
+            android:text="Connect To Wifi Printer" />
+
+        <AutoCompleteTextView
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Label Size">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/core1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Core"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/barcode1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Barcode"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/copy1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No.of copy"
+            android:inputType="text"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickPrint"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="onScan"
+            android:text="Scan " />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

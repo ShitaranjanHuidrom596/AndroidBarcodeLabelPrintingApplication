@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".l_18x19">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickConnect"
+            android:text="Connect Usb Printer" />
+
+        <AutoCompleteTextView
+            android:id="@+id/productnamelbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+        <EditText
+            android:id="@+id/companynamelbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Name"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/addresslbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/tollfreelbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Toll Free No"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/maillbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mail Id"
+            android:inputType="text"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/distributorlbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distributor"
+            android:inputType="text"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/salelbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sale On"
+            android:inputType="text"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/websitelbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Website"
+            android:inputType="text"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/copylbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No. of Copy"
+            android:inputType="text"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickPrint"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="onScan"
+            android:text="Scan " />
+
+        <Button
+            android:id="@+id/calibrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="calibrate"
+            android:text="Calibarte the Label " />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Printsticker">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickConnect"
+            android:text="Connect Usb Printer" />
+
+        <AutoCompleteTextView
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Label Size">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+        <EditText
+            android:id="@+id/type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/core1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Core"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/copy1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No.of copy"
+            android:inputType="number"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/printbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="print"
+            android:text="Print Sticker" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="onScan"
+            android:text="Scan " />
+
+        <Button
+            android:id="@+id/calibrate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="calibratekores"
+            android:text="Calibration " />
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="calibratekores"
+            android:text="BACK" />
+
+        <TextView
+            android:id="@+id/labelsizetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

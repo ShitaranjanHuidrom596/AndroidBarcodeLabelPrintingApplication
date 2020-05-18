@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">koresendura</string>
+
+    <string name="activity_main_tips">Please connect to printer!</string>
+    <string name="activity_wifi_lblipaddress">IP Address:</string>
+    <string name="activity_wifi_lblport">Port:</string>
+    <string name="activity_wifi_btnconnect">Connect</string>
+    <string name="activity_wifi_btncancel">Cancel</string>
+    <string name="activity_wifi_ip">192.168.0.33</string>
+    <string name="activity_wifi_port">9100</string>
+    <string name="activity_wifi_noIP">Please import IP address</string>
+</resources>

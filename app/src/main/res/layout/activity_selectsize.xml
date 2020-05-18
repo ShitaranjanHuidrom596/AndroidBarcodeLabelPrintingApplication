@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectsize">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Select Label Types" />
+
+            <Button
+                android:id="@+id/L_18x19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="18 x 19 mm Sticker" />
+
+            <Button
+                android:id="@+id/L_100x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/L_18x19"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="100 x 20 mm Sticker" />
+
+            <Button
+                android:id="@+id/L_75x50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/L_100x20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="75 X 50 mm Sticker" />
+
+            <Button
+                android:id="@+id/l_75x50box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/L_100x20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="116dp"
+                android:text="75 X 50 mm Sticker (Box)" />
+
+            <Button
+                android:id="@+id/l_100x150"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_75x50box"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="100mm X 150 mm Sticker (Box)" />
+
+            <Button
+                android:id="@+id/gauravbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_100x150"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Gaurav Enterprises" />
+
+            <Button
+                android:id="@+id/fragilebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gauravbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Fragile" />
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
